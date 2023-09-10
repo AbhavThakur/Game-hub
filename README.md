@@ -1,27 +1,68 @@
-# React + TypeScript + Vite
+# Game Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GameHub is your one-stop destination for all things related to video games. Whether you're a hardcore gamer, a casual player, or just someone interested in the world of gaming, Game-hub has something to offer for everyone.
 
-Currently, two official plugins are available:
+Key Features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Extensive Game Database: Our website boasts an extensive database of video games spanning multiple platforms and genres. You can search for your favorite titles, discover new games, and access detailed information about each one.
 
-## Expanding the ESLint configuration
+- Personalized Recommendations: Game-hub uses advanced algorithms to provide personalized game recommendations based on your gaming history and preferences. Say goodbye to sifting through endless lists – we'll help you find the perfect game for your taste.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Game Tracking: Keep track of the games you've played, want to play, or are currently playing. Manage your gaming backlog with ease and never forget about that hidden gem you've been meaning to try.
 
-- Configure the top-level `parserOptions` property like this:
+- User Reviews and Ratings: Get insights from the gaming community by reading user reviews and ratings. Contribute your own thoughts to help others make informed decisions.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+- Discussion Forums: Join discussions, share your gaming experiences, and connect with fellow gamers in our active forums. From strategy tips to fan theories, our community has it all.
+
+- Release Calendar: Stay up-to-date with the latest game releases. Plan your gaming schedule and be the first to know when your most anticipated titles are launching.
+
+- Developer and Publisher Information: Dive deep into the world of game development. Learn about the studios and individuals behind your favorite games and explore their portfolios.
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/AbhavThakur/Game-hub
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Go to the project directory
+
+```bash
+  cd Game-hub
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run deploy
+```
+
+## Demo
+
+https://gamelifetime.netlify.app/
+
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
+## Authors
+
+- [@AbhavThakur](https://www.github.com/AbhavThakur)
