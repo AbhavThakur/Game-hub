@@ -16,12 +16,12 @@ function GameGrid() {
       >
         {isLoading &&
           skeleton.map((_, index) => (
-            <GameCardContainer>
+            <GameCardContainer key={index}>
               <GameCardSkeleton key={index} />
             </GameCardContainer>
           ))}
         {data.map((game) => (
-          <GameCardContainer>
+          <GameCardContainer key={game.id}>
             <GameCard Game={game} key={game.id} />
           </GameCardContainer>
         ))}
