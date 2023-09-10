@@ -7,9 +7,17 @@ import {
   Spinner,
 } from '@chakra-ui/react';
 import { BsChevronDown } from 'react-icons/bs';
+import { Platform } from '../hooks/useGames';
 import usePlatforms from '../hooks/usePlatforms';
 
-function PlatformSelector() {
+interface PlatformSelectorProps {
+  onSelectPlatform: (platform: Platform) => void;
+  selectedPlatform: Platform | null;
+}
+function PlatformSelector({
+  onSelectPlatform,
+  selectedPlatform,
+}: PlatformSelectorProps) {
   const { data, isLoading, error } = usePlatforms();
 
   if (error) {
@@ -21,11 +29,19 @@ function PlatformSelector() {
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<BsChevronDown />}>
-        Platforms
+        {selectedPlatform?.name === undefined
+          ? 'Platform'
+          : selectedPlatform.name}
       </MenuButton>
       <MenuList>
         {data?.map((platform) => (
-          <MenuItem>{platform.name}</MenuItem>
+          <MenuItem
+            onClick={() => {
+              onSelectPlatform(platform);
+            }}
+          >
+            {platform.name}
+          </MenuItem>
         ))}
       </MenuList>
     </Menu>
