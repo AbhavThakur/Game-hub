@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <HStack justifyContent="space-between" padding="10px">
       <Image boxSize="60px" src={logo} />
-      <Text>NavBar</Text>
+      <Text>Welcome</Text>
       <ColorModeSwitch />
     </HStack>
   );
