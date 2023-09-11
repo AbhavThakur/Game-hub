@@ -42,6 +42,7 @@ const useData = <T>(
         controller.abort();
       };
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     deps ? [...deps] : []
   );
 
