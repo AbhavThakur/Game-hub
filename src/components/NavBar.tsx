@@ -3,11 +3,15 @@ import logo from '../assets/logo.webp';
 import ColorModeSwitch from './ColorModeSwitch';
 import SearchInput from './SearchInput';
 
-function NavBar() {
+interface NavBarProps {
+  onSearch: (e: string) => void;
+}
+
+function NavBar({ onSearch }: NavBarProps) {
   return (
     <HStack padding="10px">
       <Image boxSize="60px" src={logo} />
-      <SearchInput />
+      <SearchInput onSearch={(e) => onSearch(e)} />
       <ColorModeSwitch />
     </HStack>
   );
