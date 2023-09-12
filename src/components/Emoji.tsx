@@ -6,6 +6,9 @@ interface Props {
   rating: number;
 }
 function Emoji({ rating }: Props) {
+  if (rating < 3) {
+    return null;
+  }
   const emojiMap: {
     [key: number]: { src: string; alt: string; boxSize: string };
   } = {
