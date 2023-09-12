@@ -16,6 +16,7 @@ export interface Game {
     }
   ];
   metacritic: number;
+  rating_top: number;
 }
 
 const useGames = (gameQuery: QueryParams) =>
